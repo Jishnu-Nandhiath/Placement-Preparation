@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstddef>
 
-using namespace std;	
+using namespace std;
 
 class Node{
     public:
@@ -34,10 +34,23 @@ class Solution{
                return root;
            }
         }
-		int getHeight(Node* root){
-          //Write your code here
-        }
 
+    int getHeight(Node* root){
+
+
+        if(root == NULL)
+            return -1;
+        else
+        {
+        int ldepth = getHeight(root->left);
+        int rdepth = getHeight(root->right);
+
+        if(ldepth>rdepth)
+            return(ldepth + 1);
+        else
+            return(rdepth + 1);
+        }
+}
 }; //End of Solution
 
 int main() {
@@ -57,7 +70,7 @@ int main() {
 
     return 0;
 }
-    
-       
-            
-        
+
+
+
+
