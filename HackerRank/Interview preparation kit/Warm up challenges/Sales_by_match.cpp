@@ -24,4 +24,6 @@ for(auto &itr:duplicates)
 	count += (itr.second/2);
 	
 cout<<count;
+
+return 0;
 }

@@ -16,4 +16,6 @@ int main()
 		
 	}
 	cout<<valleys;
+	
+return 0;
 }
