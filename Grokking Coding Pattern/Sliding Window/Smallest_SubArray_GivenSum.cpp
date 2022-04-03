@@ -6,9 +6,6 @@ Return the size of the smallest contiguous subarray whose sum is greater or equa
 
 */
 
-
-
-
 #include<bits/stdc++.h>
 
 #define int long long int
@@ -26,7 +23,6 @@ int smallestSubArrayWithGivenSum(vector<int> inputVector, int S){
 
 	for(int i = 0 ; i < inputVector.size(); i++){
 		windowSum += inputVector[i];
-		currWindowSize = i - windowStart + 1;
 
 		while(windowSum >= S){
 			currWindowSize = i - windowStart + 1;
