@@ -15,8 +15,6 @@ int longestSubstringWithSameLetters(string inputString, int k){
 
 	int windowStart = 0, largestStringLength = 0, maxCountRepatingChars = 0;
 
-	int replacements = k;
-
 	char rightChar, leftChar;
 
 

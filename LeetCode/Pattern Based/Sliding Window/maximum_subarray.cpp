@@ -1,5 +1,8 @@
 /* Similar to sliding window :
     
+    No specified fixed length for the sliding window, window Size needs to be flexible,
+    In here window moves, if the current sum is less than the current element value. 
+
     compare the current Sum with current element, since the array contains negative integers.
 
     And compare the current Sum and the largest Sum to get the largest Sum.
