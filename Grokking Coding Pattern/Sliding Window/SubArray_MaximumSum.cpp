@@ -19,15 +19,27 @@ Find the Maximum sum of contiguous subarray of given size in the input array.
 
 using namespace std;
 
+
+/*
+
+The question is same as the previously discussed average problem, a fixed sliding window problem.
+
+*/
+
 int subArrayMaximumSum(vector<int> inputArray, int k){
 	
 	int windowMaxSum = 0, windowStart = 0, currentWindowSum = 0;
+
 	for(int i = 0; i < inputArray.size(); i++){
+
 		currentWindowSum += inputArray[i];
 
 		if(i >= (k - 1)){
+
 			windowMaxSum = max(windowMaxSum, currentWindowSum);
+
 			currentWindowSum -= inputArray[windowStart];
+
 			windowStart += 1;
 		}
 	}

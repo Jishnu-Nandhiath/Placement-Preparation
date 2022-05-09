@@ -9,6 +9,13 @@
 
 using namespace std;
 
+/* 
+---------------------------------------------------------------------------------------------------------------------
+
+This is exactly same as longest substring with k distinct letters, except the fact that k in this problem is 2.
+Nothing else is changed.
+
+*/
 
 int maximumFruits(vector<char> fruitTree){
 	int windowStart = 0, largestFruitNumber = 0;
@@ -16,14 +23,11 @@ int maximumFruits(vector<char> fruitTree){
 	map<char,int> fruitBaskets;
 
 	for(int i = 0; i < fruitTree.size(); i++){
-
-		if(fruitBaskets.find(fruitTree[i]) == fruitBaskets.end()){
-			fruitBaskets[fruitTree[i]] = 1;
-		}else{
 			fruitBaskets[fruitTree[i]] += 1;
-		}
+
 
 		while(fruitBaskets.size() > 2){
+
 			fruitBaskets[fruitTree[windowStart]] -= 1;
 
 			if(fruitBaskets[fruitTree[windowStart]] == 0)
@@ -32,6 +36,7 @@ int maximumFruits(vector<char> fruitTree){
 			windowStart += 1;
 
 		}
+
 		largestFruitNumber = max(largestFruitNumber, i - windowStart + 1);
 	}
 
@@ -75,7 +80,7 @@ int main(){
 			fruitTreeList.pb(fruits);
 		}
 
-		print(fruitTreeList);
+		// print(fruitTreeList);
 
 		cout << maximumFruits(fruitTreeList) << endl;
 	}
