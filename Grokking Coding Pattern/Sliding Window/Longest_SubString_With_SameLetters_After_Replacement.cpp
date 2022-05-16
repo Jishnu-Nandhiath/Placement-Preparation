@@ -54,6 +54,13 @@ of the whole count 'a's in the array.
 The implementation may seems a bit tricky. But it's efficient. Try yourself with some random inputs
 to better understand the solution.
 
+The if loop is like, when the window size exceeds more than k different characters other than the most repeating one, we enters
+inside the if loop, and the window size remains the same after that. Because since we need the longest string after k replacements
+we are only intersted when a larger window comes up. So, that we don't necessarily need to change the window size, because if the
+output is going to change, the windowsize has to increase. 
+
+So this problem can be categorized like Dynamic - Fixed Sliding Window (I named it myself  :) ")
+
 */
 
 

@@ -9,6 +9,27 @@
 
 using namespace std;
 
+/*
+
+This problem is exactly same as the last problem of Longest_Substring_With_SameLetters_After_Replacment,
+except in this case it is more easy.
+
+Because in this problem, we just need to keep track of the ones, and all other characters are zeros.
+
+==================================================================================================================
+
+So that, we need to check only when the window contains more than k zero characters. So that the left end
+characters can be removed. 
+
+In the last problem, the most repeating character can be any character, because of this we need to check
+whether the current character occurence is more than the no of occureneces of the last character. But in this
+case only count of ones needs to be checked.
+
+*/
+
+
+
+
 int longestOneArrayLength(vector<int> inputVector, int k){
 	int windowStart = 0, longestOneLength = 0;
 
