@@ -9,15 +9,32 @@
 
 using namespace std;
 
-int removeKeyInstancesLength(vector<int> inputVector, int key){ 
+/*
+
+Well, it's just ultra easy.
+
+Yeah and you have just modified the input array in O(1) by passing the function parameter as
+reference.
+
+vector resizing is used to just remove the other unwanted elements after removal.
+
+*/
+
+int removeKeyInstancesLength(vector<int> &inputVector, int key){ 
 
 	int arrayLength = 0;
 
 	for(int i = 0; i < inputVector.size(); i++){
 		if(inputVector[i] != key){
+			
+			inputVector[arrayLength] = inputVector[i];
 			arrayLength+=1;
+		
 		}
 	}
+
+	inputVector.resize(arrayLength);
+
 	return arrayLength;
 }
 
@@ -48,6 +65,8 @@ int main(){
 		}
 
 		cout << removeKeyInstancesLength(inputVector,k) << endl;
+
+		print(inputVector);
 	}
 
 	return 0;
