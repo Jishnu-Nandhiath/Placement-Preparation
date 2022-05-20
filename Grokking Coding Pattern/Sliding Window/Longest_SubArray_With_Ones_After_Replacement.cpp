@@ -11,6 +11,16 @@ using namespace std;
 
 /*
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement: 
+
+Given an array containing 0s and 1s, if you are allowed to replace no more than 'k' 0s with 1s, find the length of longest contiguous
+subarray having all 1s.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 This problem is exactly same as the last problem of Longest_Substring_With_SameLetters_After_Replacment,
 except in this case it is more easy.
 

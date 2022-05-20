@@ -1,10 +1,3 @@
-/*
-
-Problem Statement:
-
-Return the size of the smallest contiguous subarray whose sum is greater or equal to the given value. 
-
-*/
 
 #include<bits/stdc++.h>
 
@@ -16,6 +9,21 @@ Return the size of the smallest contiguous subarray whose sum is greater or equa
 #define print1(a) for(auto x : a) cout << x.F << " " << x.S << endl;
 
 using namespace std;
+
+
+/*
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+
+Return the size of the smallest contiguous subarray whose sum is greater or equal to the given value S. 
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+*/
+
+
 
 int smallestSubArrayWithGivenSum(vector<int> inputVector, int S){
 
@@ -35,6 +43,8 @@ int smallestSubArrayWithGivenSum(vector<int> inputVector, int S){
 
 	return windowSize;
 }
+
+
 
 
 int32_t main(){

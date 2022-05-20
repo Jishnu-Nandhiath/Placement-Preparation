@@ -10,6 +10,17 @@
 using namespace std;
 
 /*
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+problem Statement:
+
+Given a string and a pattern, find out if the string contains any permutation of the pattern.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
 This is a question of fixed sliding window pattern. 
 
 Because in this question, we need to check whether the permutation of the given string is inside the input string, so that order

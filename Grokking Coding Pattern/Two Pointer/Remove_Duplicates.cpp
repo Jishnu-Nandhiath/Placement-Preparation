@@ -10,6 +10,16 @@
 using namespace std;
 
 /*
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+
+Given an array of sorted numbers, remove all duplicates from it. You should not use any extra space; after removing the duplicates
+in-place return the new length of the array.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
 This is another simple example of the 2 pointer approach. 
 
 There is 2 pointers in this problem, where one will sit at the currently found unique element,

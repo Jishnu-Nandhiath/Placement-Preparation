@@ -12,6 +12,16 @@ using namespace std;
 
 /* 
 
+-------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement: 
+
+Given a string, find the length of the longest substring which has no repeating characters.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
 The if loop condition is checking whether the char at current index is already present in the map.
 
 If it is already present in the map, then we can update the windowStart by checking the last time the

@@ -11,6 +11,16 @@ using namespace std;
 
 /*
 
+-------------------------------------------------------------------------------------------------------------------------------
+
+Problem statement: 
+
+Given a string with lowercase characters only, if you are allowed to replace no more than 'k' letters with any letter, find the length
+of the longest substring having the same letters after replacement.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
 If you're a beginner the basic intution will be to replace the characters in the array with same 
 characters nearby and take the count. But that will be taking extra time and space 
 complexity.

@@ -10,6 +10,16 @@
 using namespace std;
 
 /* 
+
+---------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+
+Given an array of characters where each character represents a fruit tree, you are given two baskets
+and your goal is to put maximum number of fruits in each basket. The only restriction is that each basket
+can have only one type of fruit.
+
+
 ---------------------------------------------------------------------------------------------------------------------
 
 This is exactly same as longest substring with k distinct letters, except the fact that k in this problem is 2.

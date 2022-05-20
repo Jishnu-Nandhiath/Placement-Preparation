@@ -10,6 +10,16 @@
 using namespace std;
 
 /*
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+
+Given a string and pattern, find all anagrams of the pattern starting indices in the given string.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
 This question is exactly similar to the last one, because in here instead of permutation boolean check, we're checking to find the
 starting indices of the anagrams. So the only replacement is inside the matching where we add the windowStart values to the vector
 instead of returning true in the last case.

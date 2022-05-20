@@ -10,7 +10,18 @@
 using namespace std;
 
 
-/* This is a basic question involving 2 pointers, 
+/* 
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+
+Given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+This is a basic question involving 2 pointers, 
 
 where 2 pointers iterate from both end of an array to find the target sum.
 

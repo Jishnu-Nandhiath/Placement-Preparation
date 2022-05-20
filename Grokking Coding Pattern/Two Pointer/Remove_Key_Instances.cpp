@@ -11,6 +11,16 @@ using namespace std;
 
 /*
 
+-------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+
+Given an unsorted array of numbers and a target 'key', remove all instances of 'key' in-place and return the new length of the 
+array.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+
 Well, it's just ultra easy.
 
 Yeah and you have just modified the input array in O(1) by passing the function parameter as

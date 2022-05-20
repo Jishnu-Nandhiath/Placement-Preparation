@@ -9,7 +9,17 @@
 
 using namespace std;
 
-/* This is a question of the type fixed sliding window.
+/*
+
+Problem Statement:
+
+Given a string and a list of words, find all the starting indices of substring in the givens string that are a concatenation
+of all the given words exactly once without any overlapping of words. It is given that all words are of same length.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+This is a question of the type fixed sliding window.
 
 Where the window size is the total words length in the input array.
 

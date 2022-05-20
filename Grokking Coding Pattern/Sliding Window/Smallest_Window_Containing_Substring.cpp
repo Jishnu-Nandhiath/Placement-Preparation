@@ -10,6 +10,15 @@
 using namespace std;
 
 /*
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+
+Given a string and a pattern, find the smallest substring in the given string which has all the characters of the given pattern.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
 The problem is a dynamic sliding window pattern type.
 
 Where we need to find the smallest substring containing all the occurence of the pattern.
@@ -84,6 +93,13 @@ string smallestSubstringWindow(string inputString, string pattern){
 
 			if(patternFrequencyMap.find(inputString[windowStart]) != patternFrequencyMap.end()){
 				
+				/*
+	
+				The zero check is implemented here, becuase it is 0 even before we're a finding a new one. So that it is going to be 1.
+				you can use the 1 check, but implement it after incrementing the dictionary key values.
+
+				*/
+
 				if(patternFrequencyMap[inputString[windowStart]] == 0){
 					matched -= 1;
 				}
