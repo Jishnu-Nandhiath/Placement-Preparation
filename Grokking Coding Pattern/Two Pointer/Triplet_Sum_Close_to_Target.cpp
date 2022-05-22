@@ -9,6 +9,23 @@
 
 using namespace std;
 
+/*
+
+--------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+
+Given an array of unsorted numbers and a target number, find a triplet whose sum is as close to target as possible,
+return the sum of the triplet. If there are more than one such triplet, return the sum of the triplet with the 
+smallest sum.
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+*/
+
+
 
 int targetSumTriplet(vector<int> inputVector, int k){
 
