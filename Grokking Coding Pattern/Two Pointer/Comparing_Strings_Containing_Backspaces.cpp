@@ -10,6 +10,61 @@
 
 using namespace std;
 
+
+/*
+
+This is a simple implementation based on my logic, where the iteration begins fromt the end of the string,
+so that whenever a backspace comes up, the consecutive elements can be skipped. And add the characters which
+remains. 
+
+And in the end, compare the both.
+
+Another efficient approach would be using another loop continuously call this function index by index, so that
+we can break whenever a mismatch has occured. This solution is in grokking the coding pattern.
+
+The approach would be more time complex than this one, in the worst case. 
+
+Here we're using some extra space to store the output.
+
+*/
+
+
+string resultString(int stringLength, string str){
+
+	int hashCount = 0;
+
+	while(stringLength >= 0){
+
+		if(str[stringLength] == '#'){
+
+			hashCount += 1;
+
+			stringLength -= 1;
+
+		}else{
+
+			if(hashCount == 0){
+
+				out += str[stringLength];
+				stringLength -= 1;
+
+			}else{
+
+				stringLength -= hashCount;
+
+			}
+
+			hashCount = 0;
+		}
+
+	}
+
+	return out;
+
+}
+
+
+
 bool checkString(string str1, string str2){
 
 	string out1 = "", out2 = "";
@@ -18,62 +73,9 @@ bool checkString(string str1, string str2){
 
 	int i = str1.length() - 1;
 
-	while(i >= 0){
+	out1 = resultString(str1.length() - 1, str1);
 
-		if(str1[i] == '#'){
-			hashCount += 1;
-
-			i -= 1;
-
-		}else{
-
-			if(hashCount == 0){
-
-				out1 += str1[i];
-				i-= 1;
-
-			}else{
-
-				i = i - hashCount;
-
-			}
-
-			hashCount = 0;
-		}
-
-	}
-
-	hashCount = 0;
-
-	int j = str2.length() - 1;
-
-	while(j >= 0){
-
-		if(str2[j] == '#'){
-			hashCount += 1;
-
-			j -= 1;
-
-		}else{
-
-			if(hashCount == 0){
-
-				out2 += str2[j];
-				j -= 1;
-
-			}else{
-
-				j = j - hashCount;
-
-			}
-
-			hashCount = 0;
-		}
-
-	}
-
-
-	// cout << out1 << out2;
+	out2 = resultString(str2.length() - 1, str2);
 
 	if( out1 == out2)
 		return true;
@@ -81,6 +83,8 @@ bool checkString(string str1, string str2){
 	return false;
 
 }
+
+
 
 
 
