@@ -10,6 +10,23 @@
 
 using namespace std;
 
+/*
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+	
+	Given the head of a singly linkedlist, write a method to return the middle node of the linkedlist.
+
+	If the total number of nodes in the linkedlist, is even return the second middle node.
+
+	eg : 1,2,3,4,5,6 ; Return 4.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+*/
+
 class Node{
 public:
 	int data;
@@ -26,23 +43,19 @@ public:
 	}
 };
 
-int linkedListLength(Node* head){
-
-	int len = 0;
-
-	while(head){
-		len += 1;
-		head = head -> next;
-	}
-	return len;
-
-}
-
-
 int linkedListMiddle(Node* head){
-	
-}
 
+	Node* slow = head;
+	Node* fast = head;
+
+	while(fast && fast -> next){
+		slow = slow -> next; 
+		fast = fast -> next -> next;
+	}
+
+	return slow -> data;
+
+}
 
 int main(){
 	
@@ -52,6 +65,32 @@ int main(){
 		freopen("output.txt","w",stdout);
 	#endif
 
+	int element;
+
+	int i = 0;
+
+	Node* head;
+	Node* itr;
+
+	while(cin >> element){
+
+		Node* newNode = new Node(element);
+
+
+		if(i == 0){
+			head = newNode;
+			itr = head;
+		}else{
+			itr -> next = newNode;
+			itr = newNode;
+		}
+
+		i += 1;
+
+
+	}
+
+	cout << linkedListMiddle(head);
 
 	return 0;
 }

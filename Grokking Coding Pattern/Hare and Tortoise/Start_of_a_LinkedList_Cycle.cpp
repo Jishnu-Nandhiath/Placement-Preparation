@@ -13,6 +13,14 @@ using namespace std;
 
 /*
 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+
+	Given the head of a singly linkedlist that contains a cycle, write a function to find the starting node of the cycle.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
 The implementation is pretty simple. First we find the length of the cycle, then we create 2 pointers in which one is
 starting from the head, and other is starting from a distance of the cyclelength from the head. When each pointers jump
 one by one, they will eventually meet a the start of the cycle, breaking the loop.

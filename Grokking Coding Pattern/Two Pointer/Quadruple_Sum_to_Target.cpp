@@ -13,6 +13,13 @@ using namespace std;
 
 /*
 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement: 
+
+	Given an array of unsorted numbers, and a target number, find all unique quadruplets in it, whose sum is equal to the target number.
+
+-------------------------------------------------------------------------------------------------------------------------------------
 This is a brute force solution, I don't know whether better solutions exists for this kind of problems. 
 
 Howerver using the 2 pointer approach we can only eliminate the use of one for loop, so that for finding 4 numbers we can

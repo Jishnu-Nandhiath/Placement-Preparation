@@ -21,7 +21,8 @@ smallest sum.
 
 --------------------------------------------------------------------------------------------------------------------
 
-
+In this problem, we've reduced the time complexity by an order of N, using the 2 pointer approach. First for loop will get the
+first element in triplet, the 2 pointers will find the remaining 2 elements.
 
 */
 

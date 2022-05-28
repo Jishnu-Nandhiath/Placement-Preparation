@@ -13,6 +13,14 @@ using namespace std;
 
 /*
 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement :
+
+	Given two strings containing backspaces (identified by the character '#'), check if two strings are equal.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
 This is a simple implementation based on my logic, where the iteration begins fromt the end of the string,
 so that whenever a backspace comes up, the consecutive elements can be skipped. And add the characters which
 remains. 

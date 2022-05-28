@@ -13,6 +13,16 @@ using namespace std;
 
 /*
 
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Problem Statement:
+
+	Given an array containing 0s,1s,and 2s, sort the array in-place. You should treat numbers of the array as objects, hence, we can't
+	counts 0s,1s and 2s to create the array.
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
 This is another example for the 2 pointer algorithm, because the input array only consists of three
 elements, so that we only need to keep track of 2 types of elements, so that once we swap 2 and zeros to
 the end and start respectively. The 1 will automatically comes to center.
